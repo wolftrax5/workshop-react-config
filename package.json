@@ -6,7 +6,10 @@
   "scripts": {
     "start": "webpack serve",
     "build": "webpack --mode production",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage --colors",
+    "test:update": "npm test -- --updateSnapshot"
   },
   "keywords": [],
   "author": "",
@@ -23,5 +26,8 @@
     "webpack": "^5.18.0",
     "webpack-cli": "^4.4.0",
     "webpack-dev-server": "^3.11.2"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3"
   }
 }
