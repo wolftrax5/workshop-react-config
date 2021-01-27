@@ -15,6 +15,7 @@ module.exports = {
   moduleNameMapper: {
     '^.+\\.(css|less|scss)$': 'babel-jest',
     '\\.(png|jpg|gif|ttf|eot|svg)$': 'babel-jest',
+    '^@componets(.*)$': '<rootDir>/src/components$1',
   },
 
   // The paths to modules that run some code to configure or set up the testing environment before each test
